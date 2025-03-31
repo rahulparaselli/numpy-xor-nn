@@ -20,23 +20,13 @@ XOR (exclusive OR) returns true only when exactly one of the inputs is true:
 ## Neural Network Architecture
 
 ```
-      INPUT LAYER    HIDDEN LAYER    OUTPUT LAYER
-         (2 nodes)     (2 nodes)      (1 node)
-            [X]           [H]            [Y]
-                          
-            o              o
-            |\ _______     |
-            | \       \__ /|
-            |  \      /  \ |
-Input       |   \    /    \|     Output
-Data    ->  o    o--o      o  -> Prediction
-            |   /    \    /|
-            |  /      \  / |
-            | /        \/  |
-            |/_________\   |
-            o              o
-            
-      Weights W1         Weights W2
+Input Layer       Hidden Layer (2 neurons)      Output Layer
+   (x1) ______________[h1]____________________  
+             w11      /   \      w21           \ 
+                    /      \                    [y]
+   (x2) _________[h2]______\______w22_________/
+             w12      \      /      w23
+                       \____/
 ```
 
 The network consists of:
