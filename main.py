@@ -1,3 +1,6 @@
+# This is a simple implementation of a neural network to solve the XOR problem using numpy.
+# The XOR problem is a classic problem in machine learning and neural networks.
+
 import numpy as np
 
 # Instlize the weights
@@ -16,10 +19,12 @@ def sigmoid_derivative(x):
     return x * (1 - x)
 
 # training data
+#input
 X = np.array([[0, 0],
               [0, 1],
               [1, 0],
               [1, 1]])
+#output
 Y = np.array([[0],
               [1],
               [1],
